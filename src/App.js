@@ -15,8 +15,8 @@ function App() {
   async function handleAddRepository() {
     const response = await api.post("repositories", {
       title: "Umbriel",
-      owner: "https://github.com/rocketseat/umbriel",
-      techs: ["Node.js", "ReactJS"]
+      owner: "https://github.com/fabiocardao",
+      techs: ["Java", "Node.js", "ReactJS", "Flutter", "Go"]
     });
 
     setRepositories([ ...repositories, response.data ]);
